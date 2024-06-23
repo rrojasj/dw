@@ -1,0 +1,63 @@
+.banner-reto8 {
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../imgs/dw_tarea2.1.5.jpg');
+    background-color: aliceblue;
+    background-blend-mode: luminosity;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+
+.espacio {
+    padding: 50px 0;
+}
+
+
+.banner-reto8 h1 {
+    font-size: 50px;
+    color: aliceblue;
+}
+
+.banner-reto8 h4 {
+    color: aliceblue;
+}
+
+.btn-general {
+    padding: 25px 0;
+}
+
+.btn-primary {
+    width: 200px;
+}
+
+.bar-width {
+    width: 50%;
+}
+
+.espacio-iconos {
+    padding-top: 200px;
+}
+
+.icon-general {
+    padding: 10px 20px;
+}
+
+i {
+    font-size: 60px;
+    color:#0D6EFD;
+}
+
+.div-text h5,
+.div-text p {
+    color: aliceblue;
+}
+
+.rrss-general a i {
+    color: aliceblue;
+    padding: 5px 15px;
+}
+
+.reto8-footer p {
+    color: aliceblue;
+}

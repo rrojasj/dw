@@ -1,0 +1,25 @@
+.banner-index {
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../imgs/dw_t2_index_banner1.jpg');
+}
+
+.espacio {
+    padding: 400px 0;
+}
+
+
+.banner-index h1 {
+    font-size: 50px;
+    color: aliceblue;
+}
+
+.btn-general {
+    padding: 25px 0;
+}
+
+.btn-primary {
+    width: 200px;
+}

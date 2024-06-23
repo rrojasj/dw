@@ -1,0 +1,35 @@
+.banner {
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../imgs/dw_tarea2.1.6.jpg');
+    background-color: #ccd8e4;
+    background-blend-mode: luminosity;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    /* height: 100vh; Cubre el 100% del alto de la página */
+}
+
+h1, h2 {
+    color: #F0F0F0;
+}
+
+.reto6-font {
+    color: #F0F0F0;
+}
+
+.espacio {
+    padding: 600px 0;
+}
+
+.btn-general {
+    padding: 10px 20px;
+}
+
+.btn {
+    border-radius: 60px !important;
+}
+
+.btn-outline-light:hover {
+    color: darkgrey !important;
+}

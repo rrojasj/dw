@@ -1,0 +1,66 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(233, 233, 233);
+    overflow-x: hidden;
+}
+
+p {
+    color: gray;
+}
+
+button {
+    background-color: orange !important;
+    border-color: orange !important;
+    /* padding: 3% 10% !important; /* Ajustar los porcentajes tanto como sea necesario */
+    /* font-size: 2vw !important; /* Ajustar el tamaño de la fuente utilizando viewport width */
+}
+
+.title1 {
+    font-size: 50px;
+}
+
+.title2 {
+    font-size: 25px;
+    color: orange;
+}
+
+.middle-section {
+    min-width: 80%;
+    min-height: 60%;
+    background-color: aliceblue;
+    border: 2px solid lightgray;
+    padding: 75px;
+}
+
+/* .fa-id-card {
+    color: white;
+} */
+
+.span-bolder {
+    font-weight: bolder;
+}
+
+/* .icon-circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: orange;
+    display: inline-block;
+    color: white;
+} */
+
+.icon-circle {
+    background: orange;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    color: white;
+    display: inline-block;
+}
+
+/* i {
+    padding-bottom: 50% !important;
+} */

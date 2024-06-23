@@ -1,0 +1,25 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(233, 233, 233);
+    overflow-x: hidden;
+}
+
+.span-fw {
+    font-weight: bolder;
+}
+
+.container1-bg {
+    background-color: red;
+}
+
+.container2-bg {
+    background-color: green;    
+}
+
+.container3-bg {
+    background-color: orange;
+}
+
+.no-padding {
+    padding: 20px 0px;
+}

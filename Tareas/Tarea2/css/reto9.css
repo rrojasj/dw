@@ -1,0 +1,106 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-outline-warning:hover {
+    color: #1D3A92 !important;
+}
+
+.menu-items a {
+    color: #1D3A92;
+}
+
+.menu-items a:hover {
+    color: #f2AC32;
+}
+
+.title1 {
+    color: #C78722;
+    font-size: 50px;
+    font-weight:500 ;
+}
+
+.title2 {
+    color: #5E5E5E;
+    font-size: 40px;
+    font-weight:400 ;
+}
+
+.title-section h5 {
+    color: #5E5E5E;
+}
+
+.card-general {
+    padding: 50px 50px !important;
+}
+
+[class^="imghvr-"],
+[class*=" imghvr-"] {
+    background-color: rgba(159, 136, 136, 0.3) !important;
+}
+
+[class^="imghvr-"] figcaption,
+[class*=" imghvr-"] figcaption {
+    background-color: rgba(159, 136, 136, 0.3) !important;
+}
+
+.separador {
+    height: 10px;
+    background-color: #F2AC32;
+}
+
+p span {
+    font-weight: bold;
+}
+
+.ee-img {
+    width: 350px !important;
+    height: 233px !important;
+}
+
+.btn-primary {
+    background-color: #1D3A92 !important;
+    border-color: #1D3A92 !important;
+}
+
+.btn-primary:hover {
+    background-color: #B6C2E5 !important;
+    border-color: #B6C2E5 !important;
+    color: #5E5E5E !important;
+}
+
+.btn-dark {
+    background-color: #5E5E5E;
+}
+
+.card-border {
+    border-bottom: red !important;
+}
+
+.section-bg {
+    background-color: #F2AC32;
+}
+
+
+.article-text span {
+    font-weight: bold;
+}
+
+.card-info p {
+    font-size: smaller;
+}
+
+.fa-blog,
+.fa-images,
+.fa-map-location-dot,
+.fa-list-check {
+    color: #F2AC32;
+}
+
+.footer-items i{
+    padding: 5px 15px !important;
+}
+
+.footer-items div p {
+    padding-top: 10px !important;
+}

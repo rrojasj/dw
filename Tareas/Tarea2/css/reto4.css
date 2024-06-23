@@ -1,0 +1,18 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    color: #7E7E7E;
+}
+
+i {
+    color: #7EC1C2;
+}
+
+h3 {
+    padding-top: 60px;
+    font-weight: lighter;
+}
+
+.col-section {
+    margin: 0 15%;
+}

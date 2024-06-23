@@ -1,0 +1,31 @@
+@media (max-width: 576px) {
+    .banner1 {
+        /* Desactiva la animación por keyframes del banner */
+        animation: none;
+        /* Desactiva la imagen del banner */
+        background-image: none;
+        /* Agrega un fondo plano */
+        background-color: bisque;
+    }
+    .titulo1 {
+        color: #333 !important;
+        font-weight: bolder;
+    }
+    .banner2 {
+        /* Desactiva la animación por keyframes del banner */
+        animation: none;
+        /* Agrega un fondo plano */
+        background-color: aqua;
+    }
+    .titulo2 {
+        color: #f0e912 !important;
+        font-weight: bolder;
+    }
+    /* .botonvr {
+        color: brown;
+        background-color: aquamarine;
+    } */
+    .botonvr {
+        display: none;
+    }
+}

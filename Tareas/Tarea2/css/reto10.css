@@ -1,0 +1,44 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.art-dest {
+
+    background-color: lightgray;
+}
+
+.title1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+h1 {
+    color: #3b3b3b !important;
+}
+
+h5 {
+    color: #7A7A7A !important;
+}
+
+p {
+    color: #696868;
+}
+
+.section-art {
+    padding: 20px 100px;
+}
+
+[class^="imghvr-"] figcaption.gemini-pro,
+[class*=" imghvr-"] figcaption.gemini-pro {
+    background-color: rgba(161, 160, 195, 0.3) !important;
+}
+
+[class^="imghvr-"] figcaption.ai-impact,
+[class*=" imghvr-"] figcaption.ai-impact {
+    background-color: rgba(248, 126, 215, 0.3) !important;
+}
+
+p.art-summary {
+    padding: 10px 110px !important;
+
+}

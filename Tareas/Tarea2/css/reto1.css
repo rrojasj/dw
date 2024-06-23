@@ -1,0 +1,52 @@
+.logo-font {
+    color: darkslategrey;
+}
+
+.favicon {
+    padding-top: 3px;
+}
+
+header {
+    padding-bottom: 10px;
+}
+
+header a {
+    text-decoration: none;
+    padding: 0px 12px 5px 12px !important;
+    color: darkslategrey;
+    font-weight: bolder;
+}
+
+button {
+    background-color: #ce2231 !important;
+    border-color: #ce2231 !important;
+    /* align-items: center; */
+    /* border-radius: 0 !important;
+    padding: 5px 25px !important; */
+}
+
+.menu-cols {
+    padding: 10px 15px;
+}
+
+.title-line {
+    border-top: 10px solid #ce2231;
+    width: 130px;
+    padding-bottom: 10px;
+}
+
+.title-text {
+    color: #ce2231;
+}
+
+.title1 {
+    font-size: 30px;
+    font-weight: bolder;
+    padding-bottom: 20px;
+    color: darkslategrey;
+}
+
+.title2 {
+    font-size: 22px;
+    color: darkslategrey;
+}
