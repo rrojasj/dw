@@ -1,0 +1,57 @@
+.titulo1 {
+    font-size: 50px;
+}
+
+.titulo2 {
+    font-size: 30px;
+}
+
+.titulo3 {
+    font-size: 25px;
+}
+
+.fondo1 {
+    background-color: #2ab8ac;
+}
+
+.titulo4 {
+    font-size: 35px;
+}
+
+.fondo2 {
+    background-color: #ffab52;
+}
+
+/*Valores (arriba/abajo) valores2 (izq-der) */
+
+.container-fluid {
+    padding: 80px 0px;
+}
+
+.fondo3 {
+    background-color: #9c55a5;
+}
+
+.fondo4 {
+    background-color: #cce033;
+}
+
+.fondo5 {
+    background-color: #e4e4e4;
+}
+
+.fondo6 {
+    background-color: #f99cb3;
+}
+
+
+/*Tamaño de los parrafos*/
+p {
+    font-size: 20px;
+}
+
+/*personalizacion del icono*/
+i {
+    color: #fff;
+    font-size: 50px;
+}

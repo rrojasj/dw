@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.foto1 img {
+    width: 30%;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    width: 100%;
+    position: fixed; /*para que quede fijo*/
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+}
