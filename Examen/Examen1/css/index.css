@@ -1,0 +1,229 @@
+
+h1,
+h2 {
+    color: #016DB9;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h3,
+h6,
+p span,
+span {
+    color: #5E5E5E;
+}
+
+button {
+    border-radius: 20px;
+}
+
+/****************************** Menu Nav ******************************/
+.nav-style {
+    /* background-color: #121634; */
+    background-color: rgba(18, 22, 52, 1);
+    box-shadow: #016DB9;
+}
+
+.navbar {
+    padding: 10px 0 10px 0;
+    letter-spacing: 5px;
+    color: #a5204d;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.optmenu {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    transition: all 1s solid;
+}
+
+.optmenu:hover {
+    color: #016DB9;
+    border-radius: 5px;
+    background-color: rgba(82, 79, 79, 0.7);
+    transition: all 1s solid;
+}
+
+.optmenu:active {
+    background-color: orange;
+}
+
+/****************************** Menu Hamburguesa ******************************/
+.navbar-toggler {
+    background-color: #D6DBE3;
+    border: 3px solid #FFF;
+}
+
+.navbar-toggler:hover {
+    background-color: #D6DBE3;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: #121634;
+    border-width: 1px;
+}
+
+/* Líneas */
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(18, 22, 52, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }         
+.custom-toggler .navbar-toggler-icon:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(18, 22, 52, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }   
+
+/****************************** Flechas carrusel ******************************/
+.carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 50px;
+      height: 50px;
+      background-size: 100%, 100%;
+      background-color: gray;
+    }
+
+/****************************** Botones ******************************/
+.get-tickets-btn {
+    border-radius: 50px;
+}
+
+.get-tickets-btn a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+.border-top {
+    border-top: 1px solid #016DB9 !important; /* Default border color and thickness */
+}
+
+.line-decorated {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.line-decorated::before,
+.line-decorated::after {
+    content: '';
+    flex-grow: 1;
+    height: 1px; /* Height of the lines */
+    background-color: #016DB9 !important; /* Line color */
+}
+
+.line-decorated::before {
+    margin-right: 20px; /* Space between the line and the text */
+}
+
+.line-decorated::after {
+    margin-left: 20px; /* Space between the line and the text */
+}
+
+.fondo0 {
+    background-color: #016DB9;
+}
+
+/****************************** Contenedores ******************************/
+.container-fluid0 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container-fluid1 {
+    padding-top: 210px;
+    padding-bottom: 200px;
+}
+
+.container-fluid2 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.container-fluid3 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.container-fluid4 {
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+/****************************** Contenedor de audio ******************************/
+.audio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Background color of the container */
+    padding: 15px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+audio {
+    width: 100%; /* Make the audio element take the full width of its container */
+}
+
+/****************************** Banner 1 ******************************/
+.container-fluid1 {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+/****************************** Efecto parallax ******************************/
+.banner1 {
+    background-image: url(../imgs/dw_e1_top_banner1.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.titulo2 {
+    color: #f0f0f0;
+}
+
+
+/****************************** Scroll top ******************************/
+.goto-top {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+/****************************** Botón Whatsapp ******************************/
+.uil-whatsapp-alt {
+    font-size: 60px; /* Adjusts both width and height proportionally */
+    color: #0B4167; /* WhatsApp green color */
+}
+
+.goto-wa {
+    position: fixed;
+    bottom: 50px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+/****************************** Footer ******************************/
+.footer-txt {
+    color: #016DB9;
+}
+
+.container-fluid-footer {
+    padding: 20px 0px;
+}
+
+.align-items-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.icons-style a {
+    padding: 0px 10px;
+}
+
+.icons-style a i{
+    color: #0B4167;
+}
