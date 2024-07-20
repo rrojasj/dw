@@ -1,9 +1,60 @@
+@charset "UTF-8";
+/****************************** Importación de Fuentes Web ******************************/
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Alegreya:ital,wght@0,400..900;1,400..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
-h1,
-h2 {
-    color: #016DB9;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+html {
+    font-size: 16px;
 }
+
+/****************************** Estilos de Títulos ******************************/
+h1 {
+    font-family: "Bona+Nova+SC";
+    font-size: 3rem !important;
+    color: #016DB9 !important;
+}
+
+h2 {
+    font-family: "Bona+Nova+SC";
+    font-size: 2rem !important;
+    color: #016DB9 !important;
+}
+
+/****************************** Estilos de Párrafos ******************************/
+p {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1rem !important;
+    color: #5E5E5E !important;
+}
+.p-medium {
+    font-size: 1.15rem !important;
+}
+.p-large {
+    font-size: 1.50rem !important;
+}
+
+/****************************** Estilos de Botones ******************************/
+button {
+    font-family: "Nunito Sans", sans-serif !important;
+}
+
+/****************************** Estilos de Input ******************************/
+/* Placeholder */
+input::placeholder {
+    color: #cec1c1 !important;
+}
+/* Added text */
+input:focus {
+    border-color: #66AFE9;
+    outline: none;
+}
+input:valid,
+input:not(:placeholder-shown){
+    font-family: "Nunito Sans", sans-serif;
+    color: #016DB9 !important;
+}
+
+
 
 h3,
 h5,
@@ -85,23 +136,18 @@ button {
 .get-tickets-btn {
     border-radius: 50px;
 }
-
 .get-tickets-btn a {
     color: #f0f0f0;
     text-decoration: none;
 }
 
-.border-top {
-    border-top: 1px solid #016DB9 !important; /* Default border color and thickness */
-}
-
+/****************************** Líneas de Títulos ******************************/
 .line-decorated {
     position: relative;
     display: flex;
     align-items: center;
     text-align: center;
 }
-
 .line-decorated::before,
 .line-decorated::after {
     content: '';
@@ -109,78 +155,41 @@ button {
     height: 1px; /* Height of the lines */
     background-color: #016DB9 !important; /* Line color */
 }
-
 .line-decorated::before {
     margin-right: 20px; /* Space between the line and the text */
 }
-
 .line-decorated::after {
     margin-left: 20px; /* Space between the line and the text */
 }
 
-.fondo0 {
+/****************************** Línea separadora ******************************/
+.separator-line {
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #016DB9;
 }
 
-/****************************** Contenedores ******************************/
-.container-fluid0 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.container-fluid1 {
-    padding-top: 210px;
-    padding-bottom: 200px;
-}
-
-.container-fluid2 {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.container-fluid3 {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.container-fluid4 {
-    padding-top: 60px;
-    padding-bottom: 80px;
-}
-
 /****************************** Contenedor de audio ******************************/
-.audio-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0; /* Background color of the container */
-    padding: 15px;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
-}
-
 audio {
-    width: 100%; /* Make the audio element take the full width of its container */
-}
-
-/****************************** Banner 1 ******************************/
-.container-fluid1 {
-    padding-top: 140px;
-    padding-bottom: 140px;
+    width: 25%; /* Make the audio element take the full width of its container */
+    background-color: rgba(60, 43, 172, 0.8) !important;
 }
 
 /****************************** Efecto parallax ******************************/
-.banner1 {
+.banner-parallax {
     background-image: url(../imgs/dw_e1_top_banner1.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    padding-top: 140px;
+    padding-bottom: 140px;
 }
 
-.titulo2 {
-    color: #f0f0f0;
+.banner-parallax-text {
+    font-family: "Alegreya", cursive !important;
+    font-size: 2.5rem !important;
+    color: #d5c7e5 !important;
 }
-
 
 /****************************** Scroll top ******************************/
 .goto-top {
@@ -241,26 +250,32 @@ audio {
 
 
 /****************************** Image transitions ******************************/
-.container-img1,
-.container-img2,
-.container-img3 {
+.custom-transition-font {
+    color: #2f0c57 !important;
+    font-family: "Alegreya", cursive;
+}
+
+/* Contenedor de los circulos promocionales */
+.circlecontainer {
     position: relative;
     display: inline-block;
 }
 
-.hover-img {
+/* Transición ejecutada */
+.hovercircle {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    width: 350px;
-    height: 200px;
-    border-radius: 3%;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
     background-color: rgba(158, 136, 183, 0.7);
     /* Instrucciones flex para centrar los círculos */
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
     font-size: 20px;
     opacity: 0;
     /* Transición para hacer un efecto suave al pasar el mouse */
@@ -268,23 +283,15 @@ audio {
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-.container-img1:hover .hover-img {
-    transform: translate(-55.5%, -50%) scale(1.05);
+.circlecontainer:hover .hovercircle {
+    transform: translate(-50%, -50%) scale(1);
     opacity: 1;
 }
 
-.container-img2:hover .hover-img {
-    transform: translate(-50%, -50%) scale(1.05);
-    opacity: 1;
-}
-
-.container-img3:hover .hover-img {
-    transform: translate(-44.6%, -50%) scale(1.05);
-    opacity: 1;
-}
-
-.custom-transition-font {
-    color: #2f0c57 !important;
+.img-galeria {
+    width: 250px;
+    border-radius: 100%;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 /****************************** Contáctenos ******************************/
@@ -295,16 +302,40 @@ audio {
     transition: color 0.3s ease;
 }
 
-.wa-contact-icon:hover {
+.wa-text {
+    color: #25D366;
+}
+
+.ig-text {
+    color: #E1306C;
+}
+
+.fb-text {
+    color: #3b5998;
+}
+
+.wa-contact-icon {
     color: #25D366; 
 }
 
-.ig-contact-icon:hover {
+.ig-contact-icon {
     color: #E1306C; 
 }
 
-.fb-contact-icon:hover {
+.fb-contact-icon {
     color: #3b5998; 
+}
+
+.wa-contact-icon:hover {
+    color: #15793A; 
+}
+
+.ig-contact-icon:hover {
+    color: #8F143D; 
+}
+
+.fb-contact-icon:hover {
+    color: #1D2B49; 
 }
 
 .contact-column {
