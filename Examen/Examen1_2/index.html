@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Examen - OnePage - SCSS</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="imgs/dw_e1_favicon1.png">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/reglas.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    </head>
+
+    <body id="inicio">
+
+        <!-- Sección: Barra de navegación y Menú -->
+        <header>
+            <!-- sticky-top  aparece el menu al desplazarce -->
+            <nav class="navbar navbar-expand-lg nav-style fixed-top">
+                <!-- probar con container-fluid -->
+                <div class="container">
+
+                    <!-- Logo -->
+                    <a class="navbar-brand logo" href="index.html">
+                        <!-- <h4 class="text-white">Empresa XYZ</h4> -->
+                        <img src="imgs/dw_e1_logo_transp_bg_150x40.png" alt="Logotipo Popovich" class="img-fluid">
+                    </a>
+
+                    <!-- Menú hamburguesa -->
+                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Contenido del menú -->
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <!-- estilos de menu: mx-auto ml-auto mr-auto-->
+                        <!-- centrar opciones: text-center -->
+                        <ul class="navbar-nav mx-auto mb-2 mb-md-0 text-center">
+                            <li class="nav-item">
+                                <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="#inicio">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="#get-tickets">Tickets</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="#nosotros">Acerca de</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="#espiritu">Espiritu</a>
+                            </li>
+                            
+                            <!-- Submenu -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white optmenu" href="#acerca-de" id="desplegable1" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Información</a>
+                                <div class="dropdown-menu text-left" aria-labelledby="desplegable1">
+                                    <a class="dropdown-item optmenu" href="#galeria">Galería</a>
+                                    <a class="dropdown-item optmenu" href="#mapa">Ubicación</a>
+                                    <a class="dropdown-item optmenu" href="#contacto">Contacto</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="pb-5"></div>
+        <div class="pb-3"></div>
+
+        <!-- Sección: Carrusel -->
+        <section class="pt-1">
+            <div id="main-carousel-indicators" class="carousel carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators pb-5">
+                    <button type="button" data-bs-target="#main-carousel-indicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#main-carousel-indicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#main-carousel-indicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#main-carousel-indicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imgs/dw_e1_top_slide1.png" class="d-block w-100 h-50" alt="Popovich 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/dw_e1_top_slide2.png" class="d-block w-100" alt="Popovich 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/dw_e1_top_slide3.png" class="d-block w-100" alt="Popovich 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/dw_e1_top_slide4.png" class="d-block w-100" alt="Popovich 4">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#main-carousel-indicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#main-carousel-indicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    
+        <!-- Sección: Título 1 & Comprar Boletos -->
+        <div id="get-tickets" class="pt-5"></div>
+        <section class="container">
+            <div>
+                <div class="text-center wow animate__animated animate__zoomInDown animate__delay-0.8s custom-animation-duration">
+                    
+                    <p class="fw-light d-">¡El espectáculo familiar más querido del mundo!</p>
+                    <h1 class="text-uppercase">Popovich Comedy Pet Theater</h1>
+                    <p class="fw-light p-medium fw-bolder">¡Este espectáculo familiar presenta más de 30 gatos domésticos, perros, loros e incluso un caballo en miniatura!</p>
+                </div>
+                <div class="d-flex justify-content-center pt-3">
+                    <button type="button" class="btn btn-primary text-uppercase get-tickets-btn wow animate__animated animate__tada animate__delay-1s"><a class="" href="/pdf/dw_e1_popovich_ticket.pdf" target="_blank">Comprar Boletos</a></button>
+                </div>
+            </div>
+        </section>
+        <div class="pb-5"></div>
+    
+        <!-- Sección: Acerca de -->
+        <!-- ---------------------------------------------------------- -->
+        <section id="nosotros" class="separator-line animate__animated animate__slideInLeft animate__delay-900ms"></section>
+        <!-- ---------------------------------------------------------- -->
+        <section class="container pt-5">
+    
+            <div class="text-center">
+                <h2 class="line-decorated text-uppercase">Acerca del espectáculo de Las Vegas</h2>
+            </div>
+    
+            <div class="row pt-3">
+                <div class="col-md-6 col-lg-7 order-md-1 pt-3">
+                    <p class="container p-medium fw-bolder pt-3">¡Todas las mascotas que actuaban fueron rescatadas de refugios para animales!</p>
+                    <p class="container pt-1">Comedy Pet Theatre es el espectáculo familiar más querido del mundo y presenta más de 30 gatos domésticos, perros, loros... ¡incluso un caballo en miniatura! ¡Este espectáculo es perfecto para agregar a tu lista de cosas para hacer en Las Vegas!</p>
+                    <p class="container pt-1">Todas las mascotas que actuaron fueron rescatadas de refugios de animales y ahora disfrutan de la vida en el centro de atención como cabezas de cartel de Las Vegas con su coprotagonista Gregory Popovich, quien también incorpora actos de malabarismo, gimnasia y equilibrio de clase mundial en la producción teatral de 60 minutos.</p>
+                    <p class="container pt-1">Popovich es un autor y artista de circo de quinta generación radicado en Kiev que ha realizado giras con el Circo de Moscú y los Ringling Brothers y Barnum & Bailey Circus.</p>
+                    <p class="container pt-1">Comedy Pet Theatre ha cautivado al público en más de 20 países, incluidos Francia, Israel, Chile, México, Colombia, Alemania, Bélgica y Holanda. ¡Ven a ver qué hace que este espectáculo de Las Vegas sea el favorito de la familia!</p>
+                </div>
+    
+                <div class="col-md-6 col-lg-5 order-md-2">
+                    <div class="pt-5"></div>
+    
+                    <!-- VIDEO MP4 -->
+                    <div class="text-center">
+                        <div class="ratio ratio-4x3">
+                            <iframe src="https://www.youtube.com/embed/H07EZIoFOtQ" title="Youtube video" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Formulario de suscripción -->
+        <section>
+            <div class="d-flex justify-content-center">
+                <form>
+                    <div class="pt-5 pb-3 fs-4 text">
+                        <label class="container form-label text-center text-dark"><p class="p-large fw-bolder">¡Quiero más información!</p></label>
+                    </div>
+                    <div class="text-center d-flex justify-content-center">
+                        <input class="form-control w-100 text-center" type="email" placeholder="Ingrese su correo" required>
+                    </div>
+                    <div class="pt-3"></div>
+                    <div id="" class="text-center"><button type="button" class="btn btn-outline-secondary get-tickets-btn wow animate__animated animate__rollIn animate__delay-1s">Suscribirse</button></div>
+                </form>
+            </div>
+        </section>
+        <div class="pb-5"></div>
+    
+        <!-- Sección: Espiritu -->
+        <!-- ---------------------------------------------------------- -->
+        <section id="espiritu" class="separator-line animate__animated animate__slideInRight animate__delay-900ms"></section>
+        <!-- ---------------------------------------------------------- -->
+        <section class="container pt-5 pb-5">
+            <div class="text-center">
+                <h2 class="line-decorated text-uppercase">Espiritu del circo</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="text-center">
+                        <lottie-player src="https://lottie.host/820cc761-db04-408a-a46f-2044ecfe28a9/MYzuUju3V1.json" autoplay loop  style="width: 80%" class="container"></lottie-player>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-8 pt-4 fs-5 text">
+                    <p>En el Popovich Comedy Pet Theater, creemos que el verdadero espíritu del circo radica tanto en el cuidado amoroso de nuestras mascotas como en la alegría de nuestro público. Nos esforzamos por brindar espectáculos que no solo entretengan, sino que también llenen de felicidad a muchas familias. Aquí, nuestros talentosos animales son parte de nuestra familia y su bienestar es nuestra prioridad, porque sabemos que cuando ellos están felices, nuestros espectadores también lo están.</p>
+                    <p>Cada presentación muestra las increíbles habilidades de nuestros amigos peludos, desde perros que saltan a través de aros hasta gatos que realizan acrobacias. Usamos técnicas de entrenamiento positivo para que ellos disfruten tanto como el público. Nuestra misión es crear recuerdos inolvidables y demostrar que el amor y respeto hacia los animales crean magia auténtica.</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Sección: Banner & Parallax -->
+        <section class="banner-parallax">
+            <div class="container">
+                <p class="text-center banner-parallax-text">¡Elegida la mejor atracción familiar en Las Vegas!</p>
+                <div class="pt-3"></div>
+                <div class="d-flex justify-content-end">
+                    <audio controls>
+                        <source src="audio/dw_e1_audio_circus.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </section>
+        <div class="pt-5"></div>
+
+        <!-- Sección: Estrellas -->
+        <section class="container">
+            <div class="text-center">
+                <h2 class="line-decorated text-uppercase">Nuestras estrellas!</h2>
+            </div>
+            <div class="container pt-5">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="text-center">
+                            <i class="fa-solid fa-dog fa-2xl pb-3 custom-icon wow animate__animated animate__jackInTheBox animate__delay-0.5s"></i>
+                            <p class="pt-3 p-medium fw-bolder">Perro</p>
+                        </div>
+                        <p class="text-center">Nuestros perritos son divertísimos, te van a encantar!</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="text-center">
+                            <i class="fa-solid fa-cat fa-2xl pb-3 custom-icon wow animate__animated animate__jackInTheBox animate__delay-0.5s"></i>
+                            <p class="pt-3 p-medium fw-bolder">Gato</p>
+                        </div>
+                        <p class="text-center">Nuestras estrellas gatitos son traviesos y juguetones.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="text-center">
+                            <i class="fa-solid fa-horse fa-2xl pb-3 custom-icon wow animate__animated animate__jackInTheBox animate__delay-0.5s"></i>
+                            <p class="pt-3 p-medium fw-bolder">Pony</p>
+                        </div>
+                        <p class="text-center">Este pony saltarín divertirá a los más chiquitines.</p>
+                    </div>
+                </div>
+
+                <div class="pt-5"></div>
+
+                <div class="row pb-5">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="text-center">
+                            <i class="fa-solid fa-crow fa-2xl pb-3 custom-icon wow animate__animated animate__jackInTheBox animate__delay-1s"></i>
+                            <p class="pt-3 p-medium fw-bolder">Cuervo</p>
+                        </div>
+                        <p class="text-center">Nuestro cuervo, la estrella más misteriosa!</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="text-center">
+                            <i class="fa-solid fa-otter fa-2xl pb-3 custom-icon wow animate__animated animate__jackInTheBox animate__delay-1s"></i>
+                            <p class="pt-3 p-medium fw-bolder">Nutria</p>
+                        </div>
+                        <p class="text-center">En el show de agua, la nutria divertirá a la audiencia.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="text-center">
+                            <i class="fa-solid fa-dragon fa-2xl pb-3 custom-icon wow animate__animated animate__jackInTheBox animate__delay-1s"></i>
+                            <p class="pt-3 p-medium fw-bolder">Dragón</p>
+                        </div>
+                        <p class="text-center">El dragón con su presencia nos dará un gran show.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="pb-5"></div>
+
+        <!-- Sección: Galería -->
+        <!-- ---------------------------------------------------------- -->
+        <section id="galeria" class="separator-line animate__animated animate__slideInLeft animate__delay-900ms"></section>
+        <!-- ---------------------------------------------------------- -->
+        <section class="pt-5 pb-5">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="line-decorated text-uppercase">Galería del teatro</h2>
+                </div>
+                <div class="row text-center pt-5">
+                    <div class="col-lg-4">
+                        <div class="circlecontainer">
+                            <img src="imgs/dw_e1_gallery_1.1.png" class="img-fluid img-galeria" alt="Foto marca">
+                            <div class="hovercircle">
+                                <p class="custom-transition-font p-large">Acrobacias</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-4">
+                        <div class="circlecontainer">
+                            <img src="imgs/dw_e1_gallery_1.2.png" class="img-fluid img-galeria" alt="Foto marca">
+                            <div class="hovercircle">
+                                <p class="custom-transition-font p-large">Encuentros</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-4">
+                        <div class="circlecontainer">
+                            <img src="imgs/dw_e1_gallery_1.3.png" class="img-fluid img-galeria" alt="Foto marca">
+                            <div class="hovercircle">
+                                <p class="custom-transition-font p-large">Compañerismo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row text-center pt-5">
+                    <div class="col-lg-4">
+                        <div class="circlecontainer">
+                            <img src="imgs/dw_e1_gallery_2.1.png" class="img-fluid img-galeria" alt="Foto marca">
+                            <div class="hovercircle">
+                                <p class="custom-transition-font p-large">Adrenalina</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-4">
+                        <div class="circlecontainer">
+                            <img src="imgs/dw_e1_gallery_2.2.png" class="img-fluid img-galeria" alt="Foto marca">
+                            <div class="hovercircle">
+                                <p class="custom-transition-font p-large">Familia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="circlecontainer">
+                            <img src="imgs/dw_e1_gallery_2.3.png" class="img-fluid img-galeria" alt="Foto marca">
+                            <div class="hovercircle">
+                                <p class="custom-transition-font p-large">Comedia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row text-center pt-5">
+                    <div class="col-lg-4">
+                        <div class="circlecontainer">
+                            <img src="imgs/dw_e1_gallery_3.1.png" class="img-fluid img-galeria" alt="Foto marca">
+                            <div class="hovercircle">
+                                <p class="custom-transition-font p-large">Entrenamiento</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-4">
+                        <div class="circlecontainer">
+                            <img src="imgs/dw_e1_gallery_3.2.png" class="img-fluid img-galeria" alt="Foto marca">
+                            <div class="hovercircle">
+                                <p class="custom-transition-font p-large">Juegos</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-4">
+                        <div class="circlecontainer">
+                            <img src="imgs/dw_e1_gallery_3.3.png" class="img-fluid img-galeria" alt="Foto marca">
+                            <div class="hovercircle">
+                                <p class="custom-transition-font p-large">Confianza</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Mapa -->
+        <section id="mapa" class="pt-5">
+            <div class="container text-center pb-3">
+                <h2 class="line-decorated text-uppercase">¿Dónde encontrarnos?</h2>
+            </div>
+
+            <div class="pt-3 pb-3 bg-light">
+                <!-- MAPA GOOGLE FULLSCREEN -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6446.577052196657!2d-115.17149072408647!3d36.1108279062556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c436c6f118c7%3A0x72568d51c1abd49!2sPopovich%20Comedy%20Pet%20Theater!5e0!3m2!1sen!2sus!4v1720734748154!5m2!1sen!2sus" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <!-- Sección: Contáctanos -->
+        <!-- ---------------------------------------------------------- -->
+        <section id="contacto" class="separator-line animate__animated animate__slideInLeft animate__delay-900ms"></section>
+        <!-- ---------------------------------------------------------- -->
+        <section class="container pt-5 pb-5">
+            <div class="text-center">
+                <h2 class="line-decorated text-uppercase">Contáctanos</h2>
+            </div>
+            <div class="row pt-5 wow animate__animated animate__lightSpeedInRight animate__delay-0.8s">
+                <div class="col-sm-12 col-md-4 col-lg-4 contact-column">
+                    <a href="#" target="_blank">
+                        <i class="fab fa-whatsapp contact-icon wa-contact-icon"></i>
+                    </a>
+                    <p class="pt-3 fs-5 text"><span class="wa-text">WhatsApp</span></p>
+                    <p class="container pt-1 p-medium text-center">Da click al ícono de WhatsApp para asistencia rápida y directa.</p>
+                </div>
+                <div class="col-sm-12 col-md-4 contact-column">
+                    <a href="https://www.instagram.com/comedy_pet_theater" target="_blank">
+                        <i class="fab fa-instagram contact-icon ig-contact-icon"></i>
+                    </a>
+                    <p class="pt-3 fs-5 text"><span class="ig-text">Instagram</span></p>
+                    <p class="container pt-1 p-medium text-center">Síguenos en Instagram para conocer nuestras últimas actualizaciones y eventos.</p>
+                </div>
+                <div class="col-sm-12 col-md-4 contact-column">
+                    <a href="https://www.facebook.com/profile.php?id=100067162180871" target="_blank">
+                        <i class="fab fa-facebook contact-icon fb-contact-icon"></i>
+                    </a>
+                    <p class="pt-3 fs-5 text"><span class="fb-text">Facebook</span></p>
+                    <p class="container pt-1 p-medium text-center">Conéctate con nosotros en Facebook para más información y noticias.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="pb-5"></div>
+    
+        <!-- Íconos: Whatsapp & Scrolltop -->
+        <a data-scroll class="goto-wa" href="#" title="Whatsapp">
+            <i data-scroll id="whatsappBtn" class="uil uil-whatsapp-alt"></i>
+        </a>
+        <a data-scroll id="flechabtn" class="goto-top" href="#inicio" title="Ir al inicio" onclick="topFunction()">
+            <img src="imgs/dw_e1_flecha_3.png" class="img-fluid wow animate__animated animate__rollIn animate__delay-0.5s" alt="flecha para ir arriba">
+        </a>
+
+        <!-- Sección: Footer -->
+        <footer class="bg-light footer-txt container-fluid-footer">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="text-uppercase">Popovich Comedy Pet Theater</h2>
+                    <p class="footer-txt">&copy; 2024 - Todos los derechos reservados</p>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Sección: Scripts -->
+        <script src="js/index.js"></script>
+        <!-- cargar el archivo JS -->
+        <script src="js/wow.min.js"></script>
+        <!-- activa los efectos de animacion -->
+        <script>
+            new WOW().init();
+        </script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+    </body>
+
+</html>

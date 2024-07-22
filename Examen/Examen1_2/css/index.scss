@@ -1,0 +1,420 @@
+@charset "UTF-8";
+/****************************** Importación de Fuentes Web ******************************/
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Alegreya:ital,wght@0,400..900;1,400..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/****************************** Variables ******************************/
+
+$px-3: 0.188rem;
+$px-5: 0.313rem;
+$px-10: 0.625rem;
+$px-20: 1.25rem;
+$px-30: 1.875rem;
+$px-40: 2.5rem;
+$px-50: 3.125rem;
+$px-60: 3.75rem;
+$px-70: 4.375rem;
+$px-80: 5rem;
+$px-90: 5.625rem;
+$px-100: 6.25rem;
+
+$perc-25: 25%;
+$perc-50: 50%;
+$perc-75: 75%;
+$perc-100: 100%;
+
+$font-family-bona-nova-sc: "Bona+Nova+SC";
+$font-family-nunito-sans: "Nunito Sans", sans-serif;
+$font-family-alegreya: "Alegreya", cursive;
+$font-family-roboto: 'Roboto', sans-serif;
+
+$font-size-base: 16px;
+$font-size-h1: 3rem;
+$font-size-h2: 2rem;
+$font-size-p: 1rem;
+$font-size-p-medium: 1.15rem;
+$font-size-p-large: 1.50rem;
+$font-size-btn: 1rem;
+
+$color-primary: #016DB9;
+$color-secondary: #5E5E5E;
+$color-placeholder: #cec1c1;
+$color-focus-border: #66AFE9;
+$color-nav-bg: rgba(18, 22, 52, 1);
+$color-nav-hover: #016DB9;
+$color-nav-active: orange;
+$color-toggler-bg: #979cc6c6;
+$color-toggler-border: #979cc6c6;
+$color-toggler-custom-border: #979cc6c6;
+$color-carousel-bg: gray;
+$color-btn-text: #f0f0f0;
+$color-line-decor: #016DB9;
+$color-separator: #016DB9;
+$color-audio-bg: rgba(60, 43, 172, 0.8);
+$color-banner-text: #d5c7e5;
+$color-whatsapp: #0B4167;
+$color-contact-whatsapp: #25D366;
+$color-contact-instagram: #E1306C;
+$color-contact-facebook: #3b5998;
+$color-contact-whatsapp-hover: #15793A;
+$color-contact-instagram-hover: #8F143D;
+$color-contact-facebook-hover: #1D2B49;
+$color-transition-font: #2f0c57;
+$color-nav-opt-hover: rgba(82, 79, 79, 0.7);
+
+$border-radius-btn: 50px;
+$border-radius-circle: 100%;
+$border-radius-toggler: 1px;
+
+$box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+
+$banner-parallax: url(../imgs/dw_e1_top_banner1.png);
+$banner-padding: 8.75rem;
+$banner-text-size: 2.5rem;
+
+$transition-duration: 0.5s;
+$transition-ease: ease;
+
+
+/****************************** Mixins ******************************/
+@mixin transition($properties, $duration, $timing-function: ease) {
+  transition: $properties $duration $timing-function;
+}
+
+@mixin center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/****************************** Estilos Globales ******************************/
+html {
+  font-size: $font-size-base;
+}
+
+/****************************** Estilos de Títulos ******************************/
+h1, h2 {
+  font-family: $font-family-bona-nova-sc;
+  color: $color-primary !important;
+}
+
+h1 {
+  font-size: $font-size-h1 !important;
+}
+
+h2 {
+  font-size: $font-size-h2 !important;
+}
+
+/****************************** Estilos de Párrafos ******************************/
+p {
+  font-family: $font-family-nunito-sans;
+  font-size: $font-size-p !important;
+  color: $color-secondary !important;
+}
+
+.p-medium {
+  font-size: $font-size-p-medium !important;
+}
+
+.p-large {
+  font-size: $font-size-p-large !important;
+}
+
+/****************************** Estilos de Botones ******************************/
+button {
+  font-family: $font-family-nunito-sans !important;
+  border-radius: $border-radius-btn;
+}
+
+/****************************** Estilos de Input ******************************/
+/* Placeholder */
+input::placeholder {
+  color: $color-placeholder !important;
+}
+
+/* Added text */
+input:focus {
+  border-color: $color-focus-border;
+  outline: none;
+}
+
+input:valid,
+input:not(:placeholder-shown) {
+  font-family: $font-family-nunito-sans;
+  color: $color-primary !important;
+}
+
+/****************************** Menu Nav ******************************/
+.nav-style {
+  background-color: $color-nav-bg;
+  box-shadow: 0 0 $px-10 $color-primary;
+}
+
+.navbar {
+  padding: $px-10 0;
+  letter-spacing: $px-3;
+  font-family: $font-family-roboto;
+  font-size: $font-size-btn;
+}
+
+.optmenu {
+  font-family: $font-family-roboto;
+  font-size: $font-size-btn;
+  @include transition(all, 1s);
+}
+
+.optmenu:hover {
+  color: $color-nav-hover;
+  border-radius: $px-5;
+  background-color: $color-nav-opt-hover;
+  @include transition(all, 1s);
+}
+
+.optmenu:active {
+  background-color: $color-nav-active;
+}
+
+/****************************** Menu Hamburguesa ******************************/
+.navbar-toggler {
+  background-color: $color-toggler-bg;
+  border: $px-3 solid $color-toggler-border;
+}
+
+.navbar-toggler:hover {
+  background-color: $color-toggler-bg;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: $color-toggler-custom-border;
+  border-width: $border-radius-toggler;
+}
+
+/* Líneas */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(156, 160, 187, 0.866)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.test {
+  color: rgba(156, 160, 187, 0.866);
+}
+
+.custom-toggler .navbar-toggler-icon:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(18, 22, 52, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/****************************** Flechas carrusel ******************************/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: $px-50;
+  height: $px-50;
+  background-size: $perc-100, $perc-100;
+  background-color: $color-carousel-bg;
+}
+
+/****************************** Botones ******************************/
+.get-tickets-btn {
+  border-radius: $border-radius-btn;
+}
+
+.get-tickets-btn a {
+  color: $color-btn-text;
+  text-decoration: none;
+}
+
+/****************************** Líneas de Títulos ******************************/
+.line-decorated {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  &::before,
+  &::after {
+    content: '';
+    flex-grow: 1;
+    height: 0.063rem; /* Altura de las líneas */
+    background-color: $color-line-decor !important; /* Color de las líneas */
+  }
+
+  &::before {
+    margin-right: $px-20; /* Espacio entre la línea y el texto */
+  }
+
+  &::after {
+    margin-left: $px-20; /* Espacio entre la línea y el texto */
+  }
+}
+
+/****************************** Línea separadora ******************************/
+.separator-line {
+  padding-top: $px-10;
+  padding-bottom: $px-10;
+  background-color: $color-separator;
+}
+
+/****************************** Contenedor de audio ******************************/
+audio {
+  width: $perc-25; /* Hace que el elemento de audio ocupe el 100% de su contenedor */
+  background-color: $color-audio-bg !important;
+}
+
+/****************************** Efecto parallax ******************************/
+.banner-parallax {
+  background-image: $banner-parallax;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: $banner-padding;
+  padding-bottom: $banner-padding;
+}
+
+.banner-parallax-text {
+  font-family: $font-family-alegreya !important;
+  font-size: $banner-text-size;
+  color: $color-banner-text !important;
+}
+
+/****************************** Scroll top ******************************/
+.goto-top {
+  position: fixed;
+  bottom: $px-50;
+  right: $px-20; 
+  width: $px-50;
+  height: $px-50;
+}
+
+
+/****************************** Botón Whatsapp ******************************/
+.uil-whatsapp-alt {
+  font-size: $px-60; /* Ajusta tanto el ancho como el alto proporcionalmente */
+  color: $color-whatsapp; /* Color verde de WhatsApp */
+}
+
+.goto-wa {
+  position: fixed;
+  bottom: $px-50;
+  left: $px-20;
+  width: $px-50;
+  height: $px-50;
+}
+
+/****************************** Footer ******************************/
+.footer-txt {
+  color: $color-primary;
+}
+
+.container-fluid-footer {
+  padding: $px-20 0;
+}
+
+.align-items-center {
+  @include center-content;
+  height: $perc-100;
+}
+
+.icons-style a {
+  padding: 0 $px-10;
+}
+
+.icons-style a i {
+  color: $color-whatsapp;
+}
+
+/****************************** Icons ******************************/
+.custom-icon {
+  color: $color-primary;
+}
+
+/****************************** Animaciones ******************************/
+.custom-animation-duration {
+  animation-duration: 2s !important;
+}
+
+/****************************** Transiciones de imágenes ******************************/
+.custom-transition-font {
+  font-size: $font-size-p-large !important;
+  color: $color-transition-font !important;
+  font-family: $font-family-alegreya;
+}
+
+/* Contenedor de los círculos promocionales */
+.circlecontainer {
+  position: relative;
+  display: inline-block;
+}
+
+/* Transición ejecutada */
+.hovercircle {
+  position: absolute;
+  top: $perc-50;
+  left: $perc-50;
+  transform: translate(-$perc-50, -$perc-50) scale(0);
+  width: 15.625rem;
+  height: 15.625rem;
+  border-radius: $border-radius-circle;
+  background-color: rgba(158, 136, 183, 0.7);
+  @include center-content;
+  color: white;
+  font-size: $px-20;
+  opacity: 0;
+  transition: transform $transition-duration $transition-ease, opacity $transition-duration $transition-ease;
+}
+
+.circlecontainer:hover .hovercircle {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.img-galeria {
+  width: 15.625rem;
+  border-radius: $border-radius-circle;
+  box-shadow: $box-shadow;
+}
+
+/****************************** Contáctenos ******************************/
+.contact-icon {
+  font-size: 3rem;
+  color: #828181;
+  @include transition(color, 0.3s);
+}
+
+.wa-text {
+  color: $color-contact-whatsapp;
+}
+
+.ig-text {
+  color: $color-contact-instagram;
+}
+
+.fb-text {
+  color: $color-contact-facebook;
+}
+
+.wa-contact-icon {
+  color: $color-contact-whatsapp;
+}
+
+.ig-contact-icon {
+  color: $color-contact-instagram;
+}
+
+.fb-contact-icon {
+  color: $color-contact-facebook;
+}
+
+.wa-contact-icon:hover {
+  color: $color-contact-whatsapp-hover;
+}
+
+.ig-contact-icon:hover {
+  color: $color-contact-instagram-hover;
+}
+
+.fb-contact-icon:hover {
+  color: $color-contact-facebook-hover;
+}
+
+.contact-column {
+  @include center-content;
+  flex-direction: column;
+}

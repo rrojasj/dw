@@ -1,0 +1,346 @@
+@charset "UTF-8";
+/****************************** Importación de Fuentes Web ******************************/
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Alegreya:ital,wght@0,400..900;1,400..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+/****************************** Variables ******************************/
+/****************************** Mixins ******************************/
+/****************************** Estilos Globales ******************************/
+html {
+  font-size: 16px;
+}
+
+/****************************** Estilos de Títulos ******************************/
+h1, h2 {
+  font-family: "Bona+Nova+SC";
+  color: #016DB9 !important;
+}
+
+h1 {
+  font-size: 3rem !important;
+}
+
+h2 {
+  font-size: 2rem !important;
+}
+
+/****************************** Estilos de Párrafos ******************************/
+p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem !important;
+  color: #5E5E5E !important;
+}
+
+.p-medium {
+  font-size: 1.15rem !important;
+}
+
+.p-large {
+  font-size: 1.5rem !important;
+}
+
+/****************************** Estilos de Botones ******************************/
+button {
+  font-family: "Nunito Sans", sans-serif !important;
+  border-radius: 50px;
+}
+
+/****************************** Estilos de Input ******************************/
+/* Placeholder */
+input::-moz-placeholder {
+  color: #cec1c1 !important;
+}
+input::placeholder {
+  color: #cec1c1 !important;
+}
+
+/* Added text */
+input:focus {
+  border-color: #66AFE9;
+  outline: none;
+}
+
+input:not(:-moz-placeholder-shown) {
+  font-family: "Nunito Sans", sans-serif;
+  color: #016DB9 !important;
+}
+
+input:valid,
+input:not(:placeholder-shown) {
+  font-family: "Nunito Sans", sans-serif;
+  color: #016DB9 !important;
+}
+
+/****************************** Menu Nav ******************************/
+.nav-style {
+  background-color: rgb(18, 22, 52);
+  box-shadow: 0 0 0.625rem #016DB9;
+}
+
+.navbar {
+  padding: 0.625rem 0;
+  letter-spacing: 0.188rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+.optmenu {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  transition: all 1s ease;
+}
+
+.optmenu:hover {
+  color: #016DB9;
+  border-radius: 0.313rem;
+  background-color: rgba(82, 79, 79, 0.7);
+  transition: all 1s ease;
+}
+
+.optmenu:active {
+  background-color: orange;
+}
+
+/****************************** Menu Hamburguesa ******************************/
+.navbar-toggler {
+  background-color: rgba(151, 156, 198, 0.7764705882);
+  border: 0.188rem solid rgba(151, 156, 198, 0.7764705882);
+}
+
+.navbar-toggler:hover {
+  background-color: rgba(151, 156, 198, 0.7764705882);
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgba(151, 156, 198, 0.7764705882);
+  border-width: 1px;
+}
+
+/* Líneas */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(156, 160, 187, 0.866)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.test {
+  color: rgba(156, 160, 187, 0.866);
+}
+
+.custom-toggler .navbar-toggler-icon:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(18, 22, 52, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/****************************** Flechas carrusel ******************************/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 3.125rem;
+  height: 3.125rem;
+  background-size: 100%, 100%;
+  background-color: gray;
+}
+
+/****************************** Botones ******************************/
+.get-tickets-btn {
+  border-radius: 50px;
+}
+
+.get-tickets-btn a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+/****************************** Líneas de Títulos ******************************/
+.line-decorated {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.line-decorated::before, .line-decorated::after {
+  content: "";
+  flex-grow: 1;
+  height: 0.063rem; /* Altura de las líneas */
+  background-color: #016DB9 !important; /* Color de las líneas */
+}
+.line-decorated::before {
+  margin-right: 1.25rem; /* Espacio entre la línea y el texto */
+}
+.line-decorated::after {
+  margin-left: 1.25rem; /* Espacio entre la línea y el texto */
+}
+
+/****************************** Línea separadora ******************************/
+.separator-line {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  background-color: #016DB9;
+}
+
+/****************************** Contenedor de audio ******************************/
+audio {
+  width: 25%; /* Hace que el elemento de audio ocupe el 100% de su contenedor */
+  background-color: rgba(60, 43, 172, 0.8) !important;
+}
+
+/****************************** Efecto parallax ******************************/
+.banner-parallax {
+  background-image: url(../imgs/dw_e1_top_banner1.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 8.75rem;
+  padding-bottom: 8.75rem;
+}
+
+.banner-parallax-text {
+  font-family: "Alegreya", cursive !important;
+  font-size: 2.5rem;
+  color: #d5c7e5 !important;
+}
+
+/****************************** Scroll top ******************************/
+.goto-top {
+  position: fixed;
+  bottom: 3.125rem;
+  right: 1.25rem;
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+/****************************** Botón Whatsapp ******************************/
+.uil-whatsapp-alt {
+  font-size: 3.75rem; /* Ajusta tanto el ancho como el alto proporcionalmente */
+  color: #0B4167; /* Color verde de WhatsApp */
+}
+
+.goto-wa {
+  position: fixed;
+  bottom: 3.125rem;
+  left: 1.25rem;
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+/****************************** Footer ******************************/
+.footer-txt {
+  color: #016DB9;
+}
+
+.container-fluid-footer {
+  padding: 1.25rem 0;
+}
+
+.align-items-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.icons-style a {
+  padding: 0 0.625rem;
+}
+
+.icons-style a i {
+  color: #0B4167;
+}
+
+/****************************** Icons ******************************/
+.custom-icon {
+  color: #016DB9;
+}
+
+/****************************** Animaciones ******************************/
+.custom-animation-duration {
+  animation-duration: 2s !important;
+}
+
+/****************************** Transiciones de imágenes ******************************/
+.custom-transition-font {
+  font-size: 1.5rem !important;
+  color: #2f0c57 !important;
+  font-family: "Alegreya", cursive;
+}
+
+/* Contenedor de los círculos promocionales */
+.circlecontainer {
+  position: relative;
+  display: inline-block;
+}
+
+/* Transición ejecutada */
+.hovercircle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 15.625rem;
+  height: 15.625rem;
+  border-radius: 100%;
+  background-color: rgba(158, 136, 183, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.25rem;
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.circlecontainer:hover .hovercircle {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.img-galeria {
+  width: 15.625rem;
+  border-radius: 100%;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/****************************** Contáctenos ******************************/
+.contact-icon {
+  font-size: 3rem;
+  color: #828181;
+  transition: color 0.3s ease;
+}
+
+.wa-text {
+  color: #25D366;
+}
+
+.ig-text {
+  color: #E1306C;
+}
+
+.fb-text {
+  color: #3b5998;
+}
+
+.wa-contact-icon {
+  color: #25D366;
+}
+
+.ig-contact-icon {
+  color: #E1306C;
+}
+
+.fb-contact-icon {
+  color: #3b5998;
+}
+
+.wa-contact-icon:hover {
+  color: #15793A;
+}
+
+.ig-contact-icon:hover {
+  color: #8F143D;
+}
+
+.fb-contact-icon:hover {
+  color: #1D2B49;
+}
+
+.contact-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}/*# sourceMappingURL=index.css.map */
