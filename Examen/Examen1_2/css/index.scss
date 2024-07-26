@@ -270,7 +270,7 @@ audio {
 
 .banner-parallax-text {
   font-family: $font-family-alegreya !important;
-  font-size: $banner-text-size;
+  font-size: $banner-text-size !important;
   color: $color-banner-text !important;
 }
 
