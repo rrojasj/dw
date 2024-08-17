@@ -9,90 +9,92 @@ html {
 }
 
 /****************************** Estilos del Nav ******************************/
-.navbar-style {
-  background-color: rgba(40, 40, 43, 0.439);
-  transition: all 1s ease;
-}
-
-.navbar-style:hover {
-  background-color: #28282B;
-  box-shadow: 0 0 0.625rem #788D91;
+.nav-style {
+  background-color: #FF1616;
+  box-shadow: 0 0 0.625rem #42799E;
 }
 
 .navbar {
-  padding: 0.75rem;
-  letter-spacing: 0.25rem;
-  border-bottom: 0.25rem solid #FF3333;
-  height: 6.25rem;
-}
-
-.navbar-logo {
-  width: 12.5rem;
-  height: 3.438rem;
-  transition: opacity 0.5s ease-in-out;
-  opacity: 1;
-}
-
-.navbar-menu-option {
+  padding: 0.625rem;
+  letter-spacing: 0.125rem;
   font-family: "Open Sans", sans-serif;
-  color: #FF7070 !important;
-  font-size: 80px;
+  font-size: 16px;
+}
+
+.option-menu {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
   transition: all 1s ease;
 }
 
 .option-menu:hover {
-  color: #5C6D70;
+  color: #305873;
   border-radius: 0.313rem;
-  background-color: #FF7070;
+  background-color: #FF5C5C;
   transition: all 1s ease;
 }
 
 .option-menu:active {
-  background-color: #D6D6D6;
+  background-color: #75E6D1;
 }
 
 .dropdown-menu a {
-  color: #FF3333;
+  color: #FF1616;
 }
 
 .dropdown-menu a:hover {
-  background-color: #305873;
+  background-color: #28282B;
 }
 
 /****************************** Menu Hamburguesa ******************************/
 .navbar-toggler {
-  background-color: #305873;
-  border: 0.063rem solid #FF7070;
+  background-color: #28282B;
+  border: 0.063rem solid #FF5C5C;
 }
 
 .navbar-toggler:hover {
-  background-color: #FF7070;
+  background-color: #FF5C5C;
 }
 
 .custom-toggler.navbar-toggler {
-  border-color: #305873;
+  border-color: #28282B;
   border-width: 0.063rem;
 }
 
 /* Líneas */
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(241, 241, 241, 0.866)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(156, 160, 187, 0.866)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .custom-toggler .navbar-toggler-icon:hover {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(228, 253, 225)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-/****************************** Sección: Footer ******************************/
-.footer-style {
-  height: 6.25rem;
-  padding: 0.625rem;
-  letter-spacing: 0.125rem;
-  transition: all 1s ease;
-  background-color: #28282B;
-  box-shadow: 0 -2px 4px #FF7070;
+@media (max-width: 36rem) {
+  h1 {
+    font-size: 1.25rem;
+  }
+  h3 {
+    font-size: 0.813rem;
+  }
+  h6 {
+    font-size: 0.75rem;
+  }
+  button {
+    width: 30%;
+    font-size: 0.688rem !important;
+  }
 }
-
-.footer-text {
-  color: #FF3333;
-}/*# sourceMappingURL=general.css.map */
+@media (max-width: 87.438rem) {
+  .carousel-indicators {
+    display: none !important;
+  }
+  nav.fixed-top.fixed-top {
+    position: static;
+  }
+}
+@media (max-width: 61.938rem) {
+  li.ps-5 {
+    padding-left: 0 !important;
+  }
+}/*# sourceMappingURL=rules.css.map */
