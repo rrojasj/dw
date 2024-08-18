@@ -84,7 +84,7 @@ $color-primary-blue: #0707f1;
 $color-primary-grey: #818488;
 $color-secondary-black: #4c4848;
 $color-palette-1-1: #FF3333;
-$color-palette-1-2: #FF7070;
+$color-palette-1-2: rgb(255, 112, 112);
 $color-palette-2-1: #28282B;
 $color-palette-2-1-transp: rgba(40, 40, 43, 0.439);
 $color-palette-2-2: #45454A;
@@ -101,6 +101,7 @@ $color-contact-instagram: #D61F5C;
 $color-contact-instagram-hover: #8F143D;
 $color-contact-linkedin: #0AA9FF;
 $color-contact-linkedin-hover: #0077B5;
+$color-transition-font: $color-palette-2-1;
 
 $border-radius-btn: 3.125rem;
 $border-radius-circle: 100%;
@@ -186,8 +187,12 @@ p {
     @include transition(all, 1s);
 }
 
+.dropdown-menu a:hover {
+    background-color: $color-palette-4-2 !important;
+}
+
 .option-menu:hover {
-    color: $color-palette-5-1;
+    color: $color-palette-2-1 !important;
     border-radius: $px-5;
     background-color: $color-palette-1-2;
     @include transition(all, 1s);
@@ -202,7 +207,7 @@ p {
 }
 
 .dropdown-menu a:hover {
-    background-color: $color-palette-3-1;
+    background-color: $color-palette-1-2;
 }
 
 /****************************** Menu Hamburguesa ******************************/
@@ -298,3 +303,15 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
     background-color: $color-palette-3-2 !important;
     color: $color-palette-4-1 !important;
 }
+
+/****************************** Menu - current option ******************************/
+
+a[aria-current="page"] {
+    pointer-events: none; /* Optional: Prevents clicking on the link */
+}
+
+a[aria-current="page"].dropdown-item.option-menu.navbar-menu-option:hover {
+    background-color: $color-palette-1-2; /* Replace with the background color you want on hover */
+    color: inherit; /* Replace with the text color you want on hover */
+}
+

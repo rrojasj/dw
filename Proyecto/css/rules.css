@@ -6,13 +6,12 @@
 /****************************** Estilos Globales ******************************/
 html {
   font-size: 16px;
-  height: 205rem !important;
+  max-height: 100rem;
 }
 
 body, html {
   margin: 0;
   padding: 0;
-  height: 100%;
   overflow-x: hidden; /* Prevents horizontal overflow */
 }
 
@@ -68,8 +67,12 @@ p {
   transition: all 1s ease;
 }
 
+.dropdown-menu a:hover {
+  background-color: #D6D6D6 !important;
+}
+
 .option-menu:hover {
-  color: #5C6D70;
+  color: #28282B !important;
   border-radius: 0.313rem;
   background-color: #FF7070;
   transition: all 1s ease;
@@ -84,7 +87,7 @@ p {
 }
 
 .dropdown-menu a:hover {
-  background-color: #305873;
+  background-color: #FF7070;
 }
 
 /****************************** Menu Hamburguesa ******************************/
@@ -162,6 +165,28 @@ p {
   background-color: #FF7070 !important;
 }
 
+/****************************** Estilos carrusel ******************************/
+.btn-mgr-primary {
+  background-color: #305873 !important;
+  color: #f1f1f1 !important;
+  width: 18%;
+}
+
+.btn-mgr-primary:hover {
+  background-color: #42799E !important;
+  color: #f1f1f1 !important;
+}
+
+/****************************** Menu - current option ******************************/
+a[aria-current=page] {
+  pointer-events: none; /* Optional: Prevents clicking on the link */
+}
+
+a[aria-current=page].dropdown-item.option-menu.navbar-menu-option:hover {
+  background-color: #FF7070; /* Replace with the background color you want on hover */
+  color: inherit; /* Replace with the text color you want on hover */
+}
+
 @media (max-width: 1399px) {
   .carousel-indicators {
     display: none !important;
@@ -196,6 +221,24 @@ p {
   .clip-path-2 {
     display: none;
   }
+  .about-us-banner {
+    padding: 20px; /* Reduce padding */
+    height: auto; /* Adjust height if needed */
+    box-shadow: inset 0 0 0 500px rgba(226, 221, 221, 0.4); /* Adjust shadow depth */
+  }
+  .about-us-banner h1,
+  .apt-banner h1 {
+    font-size: 1.8rem; /* Smaller font size */
+    line-height: 1.2; /* Keep line height consistent */
+    color: #FF3333 !important;
+  }
+  .about-us-banner p,
+  .apt-banner p {
+    font-size: 1rem; /* Smaller font size */
+    line-height: 1.4; /* Slightly reduce line height */
+    padding-top: 7px; /* Adjust padding */
+    color: #28282B !important;
+  }
 }
 /* Extra Small devices (landscape phones, 576px and down) */
 @media (max-width: 36rem) {
@@ -213,6 +256,18 @@ p {
 @media (min-width: 48rem) {
   .hero-content h1 {
     font-size: 1.188rem;
+  }
+  .price-card:hover {
+    margin-top: -5px;
+    z-index: 5;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in;
+    border: none;
+    /*buscar sombras generadas 
+    https://getcssscan.com/css-box-shadow-examples */
+    /*cuatro valores: desplazamiento de x, desplazamiento de y, nivel de desenfoque y color de la sombra.*/
+    /*box-shadow: -2px 3px 7px 1px cyan;*/
+    box-shadow: rgba(127, 197, 207, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.5) 0px 30px 60px -30px;
   }
 }
 /* Large devices (tablets, 992px and up) */

@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /****************************** Importación de Fuentes Web ******************************/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/****************************** Importación de Fuentes Web ******************************/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /****************************** Variables ******************************/
 /****************************** Mixins ******************************/
@@ -62,7 +64,7 @@ p {
 
 .navbar-menu-option {
   font-family: "Open Sans", sans-serif;
-  color: rgb(255, 112, 112) !important;
+  color: #FF7070 !important;
   font-size: 80px;
   transition: all 1s ease;
 }
@@ -74,7 +76,7 @@ p {
 .option-menu:hover {
   color: #28282B !important;
   border-radius: 0.313rem;
-  background-color: rgb(255, 112, 112);
+  background-color: #FF7070;
   transition: all 1s ease;
 }
 
@@ -87,17 +89,17 @@ p {
 }
 
 .dropdown-menu a:hover {
-  background-color: rgb(255, 112, 112);
+  background-color: #FF7070;
 }
 
 /****************************** Menu Hamburguesa ******************************/
 .navbar-toggler {
   background-color: #305873;
-  border: 0.063rem solid rgb(255, 112, 112);
+  border: 0.063rem solid #FF7070;
 }
 
 .navbar-toggler:hover {
-  background-color: rgb(255, 112, 112);
+  background-color: #FF7070;
 }
 
 .custom-toggler.navbar-toggler {
@@ -128,7 +130,7 @@ p {
   letter-spacing: 0.125rem;
   transition: all 1s ease;
   background-color: #28282B;
-  box-shadow: 0 -2px 4px rgb(255, 112, 112);
+  box-shadow: 0 -2px 4px #FF7070;
 }
 
 .footer-text {
@@ -162,7 +164,7 @@ p {
 }
 
 .carousel-indicators button {
-  background-color: rgb(255, 112, 112) !important;
+  background-color: #FF7070 !important;
 }
 
 /****************************** Estilos carrusel ******************************/
@@ -183,6 +185,140 @@ a[aria-current=page] {
 }
 
 a[aria-current=page].dropdown-item.option-menu.navbar-menu-option:hover {
-  background-color: rgb(255, 112, 112); /* Replace with the background color you want on hover */
+  background-color: #FF7070; /* Replace with the background color you want on hover */
   color: inherit; /* Replace with the text color you want on hover */
-}/*# sourceMappingURL=general.css.map */
+}
+
+.sectionForm {
+  background-color: #f8f8f8;
+}
+
+.sectionForm .containerForm {
+  width: 80%;
+  padding: 20px;
+}
+
+.sectionForm .containerForm .formRow {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.sectionForm .containerForm .formRow .colForm {
+  position: relative;
+  width: 100%;
+  padding: 0px 10px;
+  margin: 30px 0px 10px;
+  transition: 0.5s;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: #000;
+  font-weight: bold;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox input,
+.sectionForm .containerForm .formRow .colForm .inputBox.textarea textarea {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  padding: 0px 10px;
+  z-index: 1;
+  color: #000;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox .text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0px 10px;
+  display: block;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox input:focus + .text,
+.sectionForm .containerForm .formRow .colForm .inputBox input:valid + .text {
+  left: -10px;
+  top: -35px;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox .line {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  transition: 0.5s;
+  border-radius: 2px;
+  pointer-events: none;
+  background-color: #f1f1f1;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox input:focus ~ .line,
+.sectionForm .containerForm .formRow .colForm .inputBox input:valid ~ .line {
+  height: 100%;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox.textarea {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: 10px 0px;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox.textarea textarea {
+  height: 100px;
+  resize: none;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox textarea:focus + .text,
+.sectionForm .containerForm .formRow .colForm .inputBox textarea:valid + .text {
+  left: -10px;
+  top: -35px;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox textarea:focus ~ .line,
+.sectionForm .containerForm .formRow .colForm .inputBox textarea:valid ~ .line {
+  height: 100%;
+}
+
+input[type=submit] {
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background-color: #f1f1f1;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 2px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+
+.whatsapp-icon {
+  width: 6.25rem !important;
+  height: 6.25rem !important;
+}/*# sourceMappingURL=contact-us.css.map */
