@@ -1,33 +1,89 @@
 @import "general.scss";
 
-@media (max-width: 36rem){
-    h1 {
-        font-size: $px-20;
-    }
-    h3 {
-        font-size: $px-13;
-    }
-    h6 {
-        font-size: $px-12;
-    }
-    button {
-        width: 30%;
-        font-size: $px-11 !important;
-    }
-}
-
-@media (max-width: 87.438rem) {
+@media (max-width: 1399px) {
     .carousel-indicators {
       display: none !important;
     }
 
-    nav.fixed-top.fixed-top {
+    nav.fixed-top {
         position: static;
     }
 }
 
-@media (max-width: 61.938rem) {
-    li.ps-5 {
-        padding-left: 0 !important;
+
+
+/* Extra Small devices (landscape phones, 576px and down) */
+@media (max-width: 22.5rem){
+    .hero-content h1 {
+        font-size: $px-23;
+    }
+
+    body h2 {
+        font-size: $px-20 !important;
+    }
+
+    .hero-content p {
+        font-size: $px-14;
+    }
+
+    .hero {
+        height: 80vh; 
+        overflow: auto;
+    }
+
+    .card {
+        width: 60%;
+        margin-bottom: 40px;
+    }
+
+    .svg-background-image {
+        top: 220%;
+    }
+
+    .clip-path-1,
+    .clip-path-2 {
+        display: none;
+    }    
+}
+
+/* Extra Small devices (landscape phones, 576px and down) */
+@media (max-width: 36rem){
+    .hero-content h1 {
+        font-size: $px-15;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 36rem){
+    .hero-content h1 {
+        font-size: $px-17;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 48rem){
+    .hero-content h1 {
+        font-size: $px-19;
+    }
+}
+
+/* Large devices (tablets, 992px and up) */
+@media (min-width: 62rem){
+    .hero-content h1 {
+        font-size: $px-21;
+    }
+}
+
+/* X-Large devices (Larger Desktops, 1400px and up) */
+@media (min-width: 75rem){
+    .hero-content h1 {
+        font-size: $px-23;
+    }
+}
+
+/* XX-Large devices (Larger Desktops, 1400px and up) */
+@media (min-width: 87.5rem){
+    .hero-content h1 {
+        font-size: $px-25;
     }
 }

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /****************************** Importación de Fuentes Web ******************************/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /****************************** Variables ******************************/
@@ -6,13 +7,11 @@
 /****************************** Estilos Globales ******************************/
 html {
   font-size: 16px;
-  height: 205rem !important;
 }
 
 body, html {
   margin: 0;
   padding: 0;
-  height: 100%;
   overflow-x: hidden; /* Prevents horizontal overflow */
 }
 
@@ -162,74 +161,90 @@ p {
   background-color: #FF7070 !important;
 }
 
-@media (max-width: 1399px) {
-  .carousel-indicators {
-    display: none !important;
-  }
-  nav.fixed-top {
-    position: static;
-  }
+/****************************** Estilos carrusel ******************************/
+.btn-mgr-primary {
+  background-color: #305873 !important;
+  color: #f1f1f1 !important;
+  width: 18%;
 }
-/* Extra Small devices (landscape phones, 576px and down) */
-@media (max-width: 22.5rem) {
-  .hero-content h1 {
-    font-size: 1.438rem;
-  }
-  body h2 {
-    font-size: 1.25rem !important;
-  }
-  .hero-content p {
-    font-size: 0.875rem;
-  }
-  .hero {
-    height: 80vh;
-    overflow: auto;
-  }
-  .card {
-    width: 60%;
-    margin-bottom: 40px;
-  }
-  .svg-background-image {
-    top: 220%;
-  }
-  .clip-path-1,
-  .clip-path-2 {
-    display: none;
-  }
+
+.btn-mgr-primary:hover {
+  background-color: #42799E !important;
+  color: #f1f1f1 !important;
 }
-/* Extra Small devices (landscape phones, 576px and down) */
-@media (max-width: 36rem) {
-  .hero-content h1 {
-    font-size: 0.938rem;
-  }
+
+.hero {
+  position: relative;
+  height: 80vh;
+  z-index: 1;
 }
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 36rem) {
-  .hero-content h1 {
-    font-size: 1.063rem;
-  }
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
 }
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 48rem) {
-  .hero-content h1 {
-    font-size: 1.188rem;
-  }
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-25%);
+  padding: 0 20px;
 }
-/* Large devices (tablets, 992px and up) */
-@media (min-width: 62rem) {
-  .hero-content h1 {
-    font-size: 1.313rem;
-  }
+
+.hero-content h1 {
+  font-size: 3rem !important;
+  font-weight: bold;
+  color: #FF3333;
 }
-/* X-Large devices (Larger Desktops, 1400px and up) */
-@media (min-width: 75rem) {
-  .hero-content h1 {
-    font-size: 1.438rem;
-  }
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-top: 10px;
 }
-/* XX-Large devices (Larger Desktops, 1400px and up) */
-@media (min-width: 87.5rem) {
-  .hero-content h1 {
-    font-size: 1.563rem;
-  }
-}/*# sourceMappingURL=rules.css.map */
+
+/****************************** Sección: Flecha redirección ******************************/
+.goto-top {
+  bottom: 3.125rem;
+  left: 2.5rem !important;
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+/****************************** Sección: Cards informativos ******************************/
+.info-cards {
+  padding-bottom: 0.938rem;
+  overflow-y: hidden;
+}
+
+.card-header {
+  font-family: "PT Serif", serif !important;
+  color: #FF3333 !important;
+}
+
+p.card-text {
+  color: #FF3333 !important;
+}
+
+/****************************** Sección: List-group ******************************/
+.list-group-bg {
+  background-color: #305873 !important;
+}
+
+.list-group-item {
+  color: #42799E !important;
+}
+
+/****************************** Sección: Tooltip ******************************/
+.tooltip > .tooltip-inner {
+  background-color: #FF7070;
+  color: #000;
+}/*# sourceMappingURL=index.css.map */
